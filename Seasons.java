@@ -13,7 +13,10 @@ public class Seasons {
 		System.out.println("Please enter a month (1-12)");
 		month = scnr.nextInt();
 		
-		
+		// test month validity
+		if((month < 1) || (month > 12)) {
+		System.out.println("invalid month");
+		}
 		
 		// gather user input for day
 		System.out.println("Please enter day");
