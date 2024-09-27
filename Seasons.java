@@ -24,7 +24,23 @@ public class Seasons {
 		
 		
 		// test day validity
+		switch(month) {
 		
+			case 4, 6, 9, 11:
+				if((day < 1) || (day > 30))
+					System.out.println("invalid day");
+				break;
+				
+			case 2:
+				if((day < 1) || (day > 29))
+					System.out.println("invalid day");
+				break;
+				
+			default:
+				if((day < 1) || (day > 31))
+					System.out.println("invalid day");
+				
+			}
 		
 		// decide season
 		switch(month) {
